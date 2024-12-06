@@ -73,7 +73,7 @@ public class WebSecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList("http://127.0.0.1:5500")); // Front-end origin
+        configuration.setAllowedOrigins(Arrays.asList("http://127.0.0.1:5501")); // Front-end origin
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PATCH", "DELETE", "OPTIONS")); // Allowed HTTP methods
         configuration.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type")); // Allowed headers
         configuration.setExposedHeaders(Arrays.asList("Authorization")); // Expose headers if needed
